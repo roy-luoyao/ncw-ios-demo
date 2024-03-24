@@ -76,7 +76,7 @@ class FireblocksManager {
     
     func generateMpcKeys(_ delegate: FireblocksKeyCreationDelegate) async {
         do {
-            let algorithms: Set<Algorithm> = Set([.MPC_ECDSA_SECP256K1])
+            let algorithms: Set<Algorithm> = Set([.MPC_ECDSA_SECP256K1, .MPC_EDDSA_ED25519])
             let startDate = Date()
             let result = try await getSdkInstance()?.generateMPCKeys(algorithms: algorithms)
             print("Measure - generateMpcKeys \(Date().timeIntervalSince(startDate))")
@@ -117,18 +117,21 @@ class FireblocksManager {
     
     func addDevice(_ delegate: FireblocksKeyCreationDelegate, joinWalletHandler: FireblocksJoinWalletHandler) async {
         do {
+            let startDate = Date()
             let result = try await getSdkInstance()?.requestJoinExistingWallet(joinWalletHandler: joinWalletHandler)
+            print("Measure - addDevice \(Date().timeIntervalSince(startDate))")
+
             let isGenerated = result?.first?.keyStatus == .READY
             if isGenerated {
                 startPolling()
             }
-            await delegate.isKeysGenerated(isGenerated: isGenerated, didJoin: true, error: nil)
+            delegate.isKeysGenerated(isGenerated: isGenerated, didJoin: true, error: nil)
         } catch let err as FireblocksError {
             AppLoggerManager.shared.logger()?.log("FireblocksManager, addDevice() failed: \(err.description).")
-            await delegate.isKeysGenerated(isGenerated: false, didJoin: false, error: err.description)
+            delegate.isKeysGenerated(isGenerated: false, didJoin: false, error: err.description)
         } catch {
             AppLoggerManager.shared.logger()?.log("FireblocksManager, addDevice() failed: \(error.localizedDescription).")
-            await delegate.isKeysGenerated(isGenerated: false, didJoin: false, error: error.localizedDescription)
+            delegate.isKeysGenerated(isGenerated: false, didJoin: false, error: error.localizedDescription)
         }
     }
     
@@ -167,6 +170,20 @@ class FireblocksManager {
             return nil
         }
     }
+    
+    func deriveAssetKey(privateKey: String, derivationParams: DerivationParams) async -> KeyData? {
+        guard let instance = getSdkInstance() else {
+            return nil
+        }
+        
+        do {
+            return try await instance.deriveAssetKey(extendedPrivateKey: privateKey, bip44DerivationParams: derivationParams)
+        } catch {
+            AppLoggerManager.shared.logger()?.log("FireblocksManager, deriveAssetKey failed: \(error).")
+            return nil
+        }
+    }
+
     
     func recoverWallet(resolver: FireblocksPassphraseResolver) async -> Bool {
         guard let instance = getSdkInstance() else {

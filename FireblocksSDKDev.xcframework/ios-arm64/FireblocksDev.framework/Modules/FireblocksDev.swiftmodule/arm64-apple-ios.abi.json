@@ -13663,511 +13663,511 @@
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 3473,
+      "offset": 3507,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 3521,
+      "offset": 3555,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 3567,
+      "offset": 3601,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 3625,
+      "offset": 3659,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 3673,
+      "offset": 3707,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 3722,
+      "offset": 3756,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 3784,
+      "offset": 3818,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 4001,
+      "offset": 4035,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 5763,
+      "offset": 5907,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 10238,
+      "offset": 10382,
       "length": 47,
       "value": "\"Notification Update - certifcatesUpdateNeeded\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 10381,
+      "offset": 10525,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 10397,
+      "offset": 10541,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 10540,
+      "offset": 10684,
       "length": 41,
       "value": "\"Failed to download service certificates\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 10879,
+      "offset": 11023,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 12261,
+      "offset": 12405,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 12344,
+      "offset": 12488,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 12500,
+      "offset": 12644,
       "length": 23,
       "value": "\"Upload logs succeeded\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 12757,
+      "offset": 12901,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "IntegerLiteral",
-      "offset": 15128,
+      "offset": 15272,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 16585,
+      "offset": 16729,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 16625,
+      "offset": 16769,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 16933,
+      "offset": 17077,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 17363,
+      "offset": 17507,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 17431,
+      "offset": 17575,
       "length": 31,
       "value": "\"Flow Failed: \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 17461,
+      "offset": 17605,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 21112,
+      "offset": 21256,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 21145,
+      "offset": 21289,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 21463,
+      "offset": 21607,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 21590,
+      "offset": 21734,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 21658,
+      "offset": 21802,
       "length": 35,
       "value": "\"Flow Failed: \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 21692,
+      "offset": 21836,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 23413,
+      "offset": 23557,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 23448,
+      "offset": 23592,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 23985,
+      "offset": 24129,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 24489,
+      "offset": 24633,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 24557,
+      "offset": 24701,
       "length": 35,
       "value": "\"Flow Failed: \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 24591,
+      "offset": 24735,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 25882,
+      "offset": 26026,
       "length": 38,
       "value": "\"Sign Transaction has already started\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "IntegerLiteral",
-      "offset": 26139,
+      "offset": 26283,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 26187,
+      "offset": 26331,
       "length": 73,
       "value": "\"Failed to sign transaction \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 26222,
+      "offset": 26366,
       "length": 5,
       "value": "\" Error - failed to get keys on device\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 26688,
+      "offset": 26832,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 26806,
+      "offset": 26950,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 27321,
+      "offset": 27601,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 27471,
+      "offset": 27985,
       "length": 11,
       "value": "\"Succeeded\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 27796,
+      "offset": 28310,
       "length": 63,
       "value": "\"Failed to sign transaction \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 27831,
+      "offset": 28345,
       "length": 5,
       "value": "\" Error - code: \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 27858,
+      "offset": 28372,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 28212,
+      "offset": 28726,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 28264,
+      "offset": 28778,
       "length": 31,
       "value": "\"Unexpected result from keyRef\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 30306,
+      "offset": 30820,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 30984,
+      "offset": 31498,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 31234,
+      "offset": 31748,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 33475,
+      "offset": 33989,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 34271,
+      "offset": 34785,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 34522,
+      "offset": 35036,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 36719,
+      "offset": 37233,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 37567,
+      "offset": 38081,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 37817,
+      "offset": 38331,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 40185,
+      "offset": 40699,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 40221,
+      "offset": 40735,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 40601,
+      "offset": 41115,
       "length": 31,
       "value": "\"Flow Failed: \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 40631,
+      "offset": 41145,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 40992,
+      "offset": 41506,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 43442,
+      "offset": 43956,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 43491,
+      "offset": 44005,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 43882,
+      "offset": 44396,
       "length": 31,
       "value": "\"Flow Failed: \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 43912,
+      "offset": 44426,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 44283,
+      "offset": 44797,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 44655,
+      "offset": 45169,
       "length": 111,
       "value": "\"stopJoinWallet: MPC flow already started, we can't stop it. Wait for the timeout or for the process to finish\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 44876,
+      "offset": 45390,
       "length": 35,
       "value": "\"stopping requestJoinWalletRequest\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "StringLiteral",
-      "offset": 45077,
+      "offset": 45591,
       "length": 35,
       "value": "\"stopping approveJoinWalletRequest\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/Fireblocks\/Fireblocks.swift",
       "kind": "BooleanLiteral",
-      "offset": 45508,
+      "offset": 46022,
       "length": 5,
       "value": "false"
     },
@@ -18920,504 +18920,504 @@
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 14354,
+      "offset": 14446,
       "length": 26,
       "value": "\"No mpc wrapper context, \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 14702,
+      "offset": 14794,
       "length": 23,
       "value": "\"Waiting for semaphore\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 14922,
+      "offset": 15014,
       "length": 28,
       "value": "\"Done waiting for semaphore\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 14980,
+      "offset": 15072,
       "length": 32,
       "value": "\"Got \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 15002,
+      "offset": 15094,
       "length": 8,
       "value": "\" messages\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 15194,
+      "offset": 15286,
       "length": 81,
       "value": "\"Skipping msg id \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 15220,
+      "offset": 15312,
       "length": 7,
       "value": "\" already handled but we got it as PENDING for Firebase\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 15356,
+      "offset": 15448,
       "length": 22,
       "value": "\"Adding id: \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 15377,
+      "offset": 15469,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 15728,
+      "offset": 15820,
       "length": 33,
       "value": "\"revoking firstSetupMessageTimer\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 16454,
+      "offset": 16546,
       "length": 11,
       "value": "\"algorithm\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 16497,
+      "offset": 16589,
       "length": 7,
       "value": "\"keyId\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 16578,
+      "offset": 16670,
       "length": 12,
       "value": "\"no deatils\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 16658,
+      "offset": 16750,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 17032,
+      "offset": 17124,
       "length": 11,
       "value": "\"algorithm\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 17114,
+      "offset": 17206,
       "length": 12,
       "value": "\"no deatils\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 17194,
+      "offset": 17286,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 18043,
+      "offset": 18135,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 18580,
+      "offset": 18672,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 18942,
+      "offset": 19034,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 19456,
+      "offset": 19548,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 20180,
+      "offset": 20272,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 20422,
+      "offset": 20514,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 20675,
+      "offset": 20767,
       "length": 14,
       "value": "\"takeoverData\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 20767,
+      "offset": 20859,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 21044,
+      "offset": 21136,
       "length": 11,
       "value": "\"algorithm\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 21126,
+      "offset": 21218,
       "length": 12,
       "value": "\"no deatils\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 21206,
+      "offset": 21298,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 21489,
+      "offset": 21581,
       "length": 32,
       "value": "\"Unknown msg type - \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 21520,
+      "offset": 21612,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 21585,
+      "offset": 21677,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 21779,
+      "offset": 21871,
       "length": 36,
       "value": "\"Failed to store keys - \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 21814,
+      "offset": 21906,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 21879,
+      "offset": 21971,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 22041,
+      "offset": 22133,
       "length": 5,
       "value": "\"msg\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 22660,
+      "offset": 22752,
       "length": 29,
       "value": "\"handleMsg error \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 22688,
+      "offset": 22780,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 22761,
+      "offset": 22853,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23005,
+      "offset": 23097,
       "length": 40,
       "value": "\"handleMsg error \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23033,
+      "offset": 23125,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23044,
+      "offset": 23136,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 23113,
+      "offset": 23205,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23306,
+      "offset": 23398,
       "length": 40,
       "value": "\"handleMsg error \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23334,
+      "offset": 23426,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23345,
+      "offset": 23437,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 23406,
+      "offset": 23498,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23593,
+      "offset": 23685,
       "length": 53,
       "value": "\"execption from objective c - \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23645,
+      "offset": 23737,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23698,
+      "offset": 23790,
       "length": 73,
       "value": "\"execption from objective c reason - \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23767,
+      "offset": 23859,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23770,
+      "offset": 23862,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23823,
+      "offset": 23915,
       "length": 74,
       "value": "\"execption from objective c info - \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "Dictionary",
-      "offset": 23892,
+      "offset": 23984,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23896,
+      "offset": 23988,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 23949,
+      "offset": 24041,
       "length": 93,
       "value": "\"execption from objective c stack callStackSymbols - \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 24041,
+      "offset": 24133,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 24094,
+      "offset": 24186,
       "length": 87,
       "value": "\"execption from objective c callStackSymbols - \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 24180,
+      "offset": 24272,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 24237,
+      "offset": 24329,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 24291,
+      "offset": 24383,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 24366,
+      "offset": 24458,
       "length": 16,
       "value": "\"No MPC message\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "Dictionary",
-      "offset": 24781,
+      "offset": 24873,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "Array",
-      "offset": 25293,
+      "offset": 25385,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "IntegerLiteral",
-      "offset": 25338,
+      "offset": 25430,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 25660,
+      "offset": 25752,
       "length": 52,
       "value": "\"Calling finishSetup with noFirstMessage from timer\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 26086,
+      "offset": 26178,
       "length": 53,
       "value": "\"POLLING MANAGER: \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 26138,
+      "offset": 26230,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 26554,
+      "offset": 26646,
       "length": 42,
       "value": "\"start takeover - requestId: \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 26595,
+      "offset": 26687,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 26973,
+      "offset": 27065,
       "length": 49,
       "value": "\"Calling takeover with noFirstMessage from timer\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "Dictionary",
-      "offset": 27790,
+      "offset": 27882,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "Array",
-      "offset": 28011,
+      "offset": 28103,
       "length": 2,
       "value": "[]"
     },
@@ -19431,203 +19431,203 @@
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 28468,
+      "offset": 28560,
       "length": 46,
       "value": "\"In finishSetup - setupResult: \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 28513,
+      "offset": 28605,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "Dictionary",
-      "offset": 28851,
+      "offset": 28943,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 28964,
+      "offset": 29056,
       "length": 9,
       "value": "\"timeout\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 29027,
+      "offset": 29119,
       "length": 27,
       "value": "\"failure msg type - \""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 29053,
+      "offset": 29145,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 29242,
+      "offset": 29334,
       "length": 35,
       "value": "\"Fail to parse for MPC_ERROR_SETUP\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 29442,
+      "offset": 29534,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 29453,
+      "offset": 29545,
       "length": 17,
       "value": "\"MPC_ERROR_SETUP\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "Array",
-      "offset": 29484,
+      "offset": 29576,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 29580,
+      "offset": 29672,
       "length": 5,
       "value": "\"msg\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 29669,
+      "offset": 29761,
       "length": 17,
       "value": "\"MPC_ERROR_SETUP\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 30129,
+      "offset": 30221,
       "length": 26,
       "value": "\"Start signing tx:\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 30154,
+      "offset": 30246,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "BooleanLiteral",
-      "offset": 30260,
+      "offset": 30352,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "Array",
-      "offset": 30292,
+      "offset": 30384,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 30557,
+      "offset": 30649,
       "length": 53,
       "value": "\"Calling finishSignTx with noFirstMessage from timer\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 31159,
+      "offset": 31251,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 31441,
+      "offset": 31533,
       "length": 13,
       "value": "\"In failedTx\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "Dictionary",
-      "offset": 31739,
+      "offset": 31831,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 31850,
+      "offset": 31942,
       "length": 39,
       "value": "\"Failed to parse for MPC_ERROR_SIGNING\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 32022,
+      "offset": 32114,
       "length": 19,
       "value": "\"MPC_ERROR_SIGNING\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "Array",
-      "offset": 32055,
+      "offset": 32147,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 32135,
+      "offset": 32227,
       "length": 5,
       "value": "\"msg\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 32224,
+      "offset": 32316,
       "length": 19,
       "value": "\"MPC_ERROR_SIGNING\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 32320,
+      "offset": 32412,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 32339,
+      "offset": 32431,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "StringLiteral",
-      "offset": 32369,
+      "offset": 32461,
       "length": 14,
       "value": "\"In successTx\""
     },
     {
       "filePath": "\/Users\/dudishani-gabay\/projects\/fireblocks-ios-sdk\/Shared\/Fireblocks\/MPCClasses\/MPCService.swift",
       "kind": "Dictionary",
-      "offset": 32857,
+      "offset": 32949,
       "length": 3,
       "value": "[]"
     },

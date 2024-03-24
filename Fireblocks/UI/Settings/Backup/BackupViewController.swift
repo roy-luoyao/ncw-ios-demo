@@ -53,9 +53,16 @@ class BackupViewController: UIViewController{
         } else {
             googleDriveContainerHC.constant = 0
             iCloudDriveContainerHC.constant = 0
+            navigationItem.rightBarButtonItems = [UIBarButtonItem(image: UIImage(named: "settings"), style: .plain, target: self, action: #selector(settingsTapped))]
         }
     }
     
+    @objc func settingsTapped(){
+        let vc = SettingsViewController()
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
     @IBAction func driveBackupTapped(_ sender: AppActionBotton) {
         showActivityIndicator()
         if actionType is Recover {

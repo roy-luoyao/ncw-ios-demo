@@ -38,18 +38,12 @@ class AssetListViewModel {
         TransfersViewModel.shared.$transfers.receive(on: RunLoop.main)
             .sink { [weak self] transfers in
                 if let self {
+                    self.task?.cancel()
                     self.fetchAssets()
                 }
             }.store(in: &cancellable)
     }
 
-    func createAssets() {
-        Task {
-            fetchAssets()
-        }
-
-    }
-    
     func fetchAssets() {
         task = Task {
             do {
@@ -57,9 +51,15 @@ class AssetListViewModel {
                 assetsSummary = assetResponse.map({$0.value})
                 assets = assetsSummary.filter({$0.asset != nil}).map({$0.asset!})
                 fetchBalance()
-            } catch let error {
-                print(error.localizedDescription)
-                delegate?.gotError()
+            } catch URLError.cancelled {
+                print("URLError.cancelled")
+            } catch let error as NSError {
+                if Task.isCancelled {
+                    print(error.localizedDescription)
+                } else {
+                    print(error.localizedDescription)
+                    delegate?.gotError()
+                }
             }
         }
     }
@@ -77,6 +77,10 @@ class AssetListViewModel {
         }
 
         delegate?.refreshData()
+    }
+    
+    func getAssetSummary() -> [AssetSummary] {
+        return assetsSummary
     }
     
     func getAssets() -> [Asset] {

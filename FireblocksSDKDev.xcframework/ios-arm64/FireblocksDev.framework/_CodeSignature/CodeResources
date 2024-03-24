@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/FireblocksDev.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		IhIZ4VivH+AnJDmjhisHYSxywgU=
+		wh8/U+62UcfLGz+DDeyswF1lp0I=
 		</data>
 		<key>Modules/FireblocksDev.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/FireblocksDev.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		nkRkeDZpUI1QCEZFPA2zN5O8Wx8=
+		AcldclzmV3Vv16SGYRbu5xQqL28=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -120,7 +120,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b87QqkN3ZcFqxE7qkosd3780BMxgP60X32eKGJYUwZg=
+			JlSNWMZn/zVFjafNIJr2JUeyxrgNqMOVzKQf0UjSR8I=
 			</data>
 		</dict>
 		<key>Modules/FireblocksDev.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H/E/+8BcA8oA9ckMg8R74a9ptFvW5RAZWRub9mZ5nLI=
+			OoY9Y73i5eeKqnttcmg8eN0ueDw1kB+tf+DoKlxw1EU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

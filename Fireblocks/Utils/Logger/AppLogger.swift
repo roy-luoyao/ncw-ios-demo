@@ -31,7 +31,7 @@ final class AppLogger {
 
     init(deviceId: String) {
         self.deviceId = deviceId
-        self.logPrefix = "#@! \(Date()) - \(deviceId)"
+        self.logPrefix = "#@! - \(deviceId)"
         self.logFile1 = "demo_log1"
         self.logFile2 = "demo_log2"
         self.currentLogFile = logFile1
@@ -113,7 +113,7 @@ final class AppLogger {
     }
     
     func log(_ msg: String) {
-        write("\(logPrefix) - \(msg)\n")
+        write("\(logPrefix) - \(Date().milliseconds()) - \(msg)\n")
     }
     
     private func write(_ string: String) {

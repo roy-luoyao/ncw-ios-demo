@@ -37,7 +37,7 @@ class AssetListViewController: UIViewController {
         super.viewDidLoad()
         configureView()
         viewModel.delegate = self
-        viewModel.createAssets()
+        viewModel.fetchAssets()
         viewModel.listenToTransferChanges()
         activityIndicator.startAnimating()
     }

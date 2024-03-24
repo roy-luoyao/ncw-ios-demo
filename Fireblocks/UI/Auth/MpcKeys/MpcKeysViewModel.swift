@@ -66,10 +66,8 @@ final class MpcKeysViewModel {
     }
     
     func createAssets(){
-        Task {
-            didSucceedGenerateKeys = true
-            self.delegate?.configSuccessUI()
-        }
+        didSucceedGenerateKeys = true
+        self.delegate?.configSuccessUI()
     }
 
 }

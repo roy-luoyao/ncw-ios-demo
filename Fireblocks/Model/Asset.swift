@@ -8,10 +8,18 @@
 import Foundation
 import UIKit.UIImage
 
-struct AssetSummary: Codable {
+struct AssetSummary: Codable, Identifiable, Hashable {
     var asset: Asset?
     var address: AssetAddress?
     var balance: AssetBalance?
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    var id: String {
+        return asset?.id ?? ""
+    }
 }
 
 struct Asset: Codable, Identifiable, Hashable {
@@ -52,7 +60,7 @@ struct Asset: Codable, Identifiable, Hashable {
     
 }
 
-struct AssetBalance: Codable {
+struct AssetBalance: Codable, Hashable {
     var id: String
     var total: String = "0"
     var frozen: String = "0"
@@ -60,11 +68,22 @@ struct AssetBalance: Codable {
     var pending: String = "0"
     var staked: String = "0"
     var reserved: String = "0"
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
 }
 
-struct AssetAddress: Codable {
+struct AssetAddress: Codable, Hashable {
     var address: String
     var accountId: String?
     var accountName: String?
     var addressType: String?
+    var addressIndex: Int?
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(address)
+    }
+
 }
