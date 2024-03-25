@@ -342,12 +342,14 @@ class SessionManager: ObservableObject {
         let session = URLSession.shared
         AppLoggerManager.shared.logger()?.log("\n📣📣📣📣\nSessionManager send request:\n\(request)\n📣📣📣📣")
         do {
-            AppLoggerManager.shared.logger()?.log("SessionManager REQUEST: \(String(describing: request))")
-            print("SessionManager REQUEST: \(String(describing: request))")
+            AppLoggerManager.shared.logger()?.log("SessionManager REQUEST: \(String(describing: request)) message: \(message ?? ""), body: \(body ?? "")")
+            print("\(Date().milliseconds()) SessionManager REQUEST: \(String(describing: request))")
             let (data, response) = try await session.data(for: request)
             if let statusCode = (response as? HTTPURLResponse)?.statusCode {
                 if statusCode >= 200, statusCode <= 299 {
-                    print("SessionManager RESPONSE: \(url)\n\(String(describing: String(data: data, encoding: .utf8)))")
+                    print("\(Date().milliseconds()) SessionManager RESPONSE: \(url)\n\(String(describing: String(data: data, encoding: .utf8)))")
+                    AppLoggerManager.shared.logger()?.log("SessionManager Got RESPONSE")
+
                     if !skipLogs {
                         AppLoggerManager.shared.logger()?.log("SessionManager RESPONSE: \(String(describing: String(data: data, encoding: .utf8)))")
                     }

@@ -95,7 +95,7 @@ class AssetListViewModel {
         var balanceSum: Double = 0.0
         assets.forEach { asset in
             if let price = asset.price {
-                balanceSum += price 
+                balanceSum += price
             }
         }
         

@@ -11,8 +11,8 @@ import SwiftUI
 class DeriveKeysHostingVC: FBHostingViewController {
     let viewModel: DeriveKeysView.ViewModel
 
-    init(privateKey: String) {
-        self.viewModel = DeriveKeysView.ViewModel(privateKey: privateKey)
+    init(privateKeys: [String]) {
+        self.viewModel = DeriveKeysView.ViewModel(privateKeys: privateKeys)
         let view = DeriveKeysView(viewModel: self.viewModel)
         super.init(rootView: AnyView(view))
     }

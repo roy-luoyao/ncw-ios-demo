@@ -12,28 +12,32 @@ import FireblocksSDK
 extension DeriveKeysView {
     
     class ViewModel: ObservableObject {
-        let privateKey: String
+        let privateKeys: [String]
         @Published var selectedAsset: Asset?
-        @Published var items: [DerivedKeyItem]
+        @Published var items: [String: [DerivedKeyItem]] = [:]
         
         var title: String = "Copy the Private Keys and save them in a secure location. You are now the responsible for their security."
         var navigationBarTitle: String = LocalizableStrings.exportPrivateKeyTitle
         
-        init(privateKey: String) {
-            self.privateKey = privateKey
-            self.items = AssetListViewModel.shared.getAssetSummary().map({DerivedKeyItem(assetSummary: $0)})
+        init(privateKeys: [String]) {
+            self.privateKeys = privateKeys
+            privateKeys.forEach { key in
+                self.items[key] = AssetListViewModel.shared.getAssetSummary().map({DerivedKeyItem(assetSummary: $0)})
+            }
             Task {
                 await generateKeys()
             }
         }
         
         func generateKeys() async {
-            for i in 0..<items.count {
-                let data = await items[i].deriveAssetKey(privateKey: privateKey)
-                let wif = items[i].getWif(privateKey: data?.data)
-                DispatchQueue.main.async {
-                    self.items[i].keyData = data
-                    self.items[i].wif = wif
+            for (key, value) in items {
+                for i in 0..<value.count {
+                    let data = await items[key]?[i].deriveAssetKey(privateKey: key)
+                    let wif = items[key]?[i].getWif(privateKey: data?.data)
+                    DispatchQueue.main.async {
+                        self.items[key]?[i].keyData = data
+                        self.items[key]?[i].wif = wif
+                    }
                 }
             }
         }

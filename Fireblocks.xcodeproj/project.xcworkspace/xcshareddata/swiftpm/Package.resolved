@@ -127,15 +127,6 @@
       }
     },
     {
-      "identity" : "ncw-ios-sdk",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/fireblocks/ncw-ios-sdk.git",
-      "state" : {
-        "revision" : "be7dc388374a6092048d2980fc5b1c1ee2afbad9",
-        "version" : "2.3.6"
-      }
-    },
-    {
       "identity" : "nvactivityindicatorview",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ninjaprox/NVActivityIndicatorView.git",

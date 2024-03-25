@@ -83,6 +83,10 @@ struct RedirectNewUserView: View {
                 .cornerRadius(16)
 
                 Spacer()
+                
+                Button("Share Logs") {
+                    NotificationCenter.default.post(name: Notification.Name("sendLogs"), object: nil, userInfo: nil)
+                }
             }
             .padding(16)
 
