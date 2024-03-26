@@ -11,9 +11,12 @@ import LocalAuthentication
 
 class KeyStorageProvider: KeyStorageDelegate {
     private let deviceId: String
-    
+    let context = LAContext()
+
     init(deviceId: String) {
         self.deviceId = deviceId
+        context.touchIDAuthenticationAllowableReuseDuration = 15
+
     }
     
     enum Result {
@@ -36,10 +39,6 @@ class KeyStorageProvider: KeyStorageDelegate {
         attributes[kSecAttrApplicationTag as String] = tag as AnyObject
         attributes[kSecAttrAccessControl as String] = acl
         
-        let context = LAContext()
-        context.touchIDAuthenticationAllowableReuseDuration = 0
-
-        context.setCredential(self.deviceId.data(using: .utf8), type: .applicationPassword)
         attributes[kSecUseAuthenticationContext as String] = context
         
         let status = SecItemDelete(attributes as CFDictionary)
@@ -79,9 +78,6 @@ class KeyStorageProvider: KeyStorageDelegate {
         attributes[kSecAttrAccessControl as String] = acl
         attributes[kSecMatchLimit as String] = kSecMatchLimitOne
 
-        let context = LAContext()
-        context.touchIDAuthenticationAllowableReuseDuration = 0
-
         attributes[kSecUseAuthenticationContext as String] = context
         
         var resultEntry : AnyObject? = nil
@@ -92,13 +88,13 @@ class KeyStorageProvider: KeyStorageDelegate {
     }
 
     func store(keys: [String : Data], callback: @escaping ([String : Bool]) -> ()) {
-        print("generateMpcKeys started store: \(Date())")
+        AppLoggerManager.shared.logger()?.log("\n📣📣📣📣\ngenerateMpcKeys started store: \(Date()) - keys: \(keys.keys)\n📣📣📣📣")
         biometricStatus { status in
             if status == .ready {
                 self.saveToKeychain(keys: keys, callback: callback)
             } else {
                 DispatchQueue.main.async {
-                    print("generateMpcKeys ended store: \(Date())")
+                    AppLoggerManager.shared.logger()?.log("\n📣📣📣📣\ngenerateMpcKeys started store: \(Date()) - biometric not ready\n📣📣📣📣")
                     callback([:])
                 }
             }
@@ -108,7 +104,6 @@ class KeyStorageProvider: KeyStorageDelegate {
     
     private func saveToKeychain(keys: [String : Data], callback: @escaping ([String : Bool]) -> ()) {
         guard let acl = self.getAcl() else {
-            print("generateMpcKeys ended store: \(Date())")
             callback([:])
             return
         }
@@ -128,10 +123,6 @@ class KeyStorageProvider: KeyStorageDelegate {
             attributes[kSecValueData as String] = data as AnyObject
             attributes[kSecAttrAccessControl as String] = acl
             
-            let context = LAContext()
-            context.touchIDAuthenticationAllowableReuseDuration = 0
-
-            context.setCredential(self.deviceId.data(using: .utf8), type: .applicationPassword)
             attributes[kSecUseAuthenticationContext as String] = context
             
             _ = SecItemDelete(attributes as CFDictionary)
@@ -145,7 +136,7 @@ class KeyStorageProvider: KeyStorageDelegate {
 
         }
         
-        print("generateMpcKeys ended store: \(Date())")
+        AppLoggerManager.shared.logger()?.log("\n📣📣📣📣\ngenerateMpcKeys started store: \(Date()) - keys stored: \(mpcSecretKeys)\n📣📣📣📣")
         callback(mpcSecretKeys)
 
 
@@ -155,85 +146,73 @@ class KeyStorageProvider: KeyStorageDelegate {
         let startDate = Date()
         biometricStatus { status in
             if status == .ready {
-                self.getKeys(keyIds: keyIds, callback: callback)
+                Task {
+                    let keys = await self.getKeys(keyIds: keyIds)
+                    DispatchQueue.main.async {
+                        callback(keys)
+                    }
+                }
             } else {
                 DispatchQueue.main.async {
-                    print("Measure - load keys \(Date().timeIntervalSince(startDate))")
+                    AppLoggerManager.shared.logger()?.log("\n📣📣📣📣\ngenerateMpcKeys started load: \(Date()) - biometric not ready\n📣📣📣📣")
                     callback([:])
                 }
             }
         }
     }
     
-    private func getKeys(keyIds: Set<String>, callback: @escaping ([String : Data]) -> ()) {
+    private func getKeys(keyIds: Set<String>) async -> [String : Data] {
         var dict: [String: Data] = [:]
         let startDate = Date()
+        guard let acl = self.getAcl() else {
+            return [:]
+        }
 
         for keyId in keyIds {
-            getMpcSecret(keyId: keyId) { result in
+            let result = await getMpcSecret(keyId: keyId, acl: acl)
                 switch result {
                 case .loadSuccess(let data):
+                    AppLoggerManager.shared.logger()?.log("\n📣📣📣📣\ngenerateMpcKeys started load: \(Date()) - succeeded to load key: \(keyId)\n📣📣📣📣")
                     dict[keyId] = data
                 case .failure(let failure):
-                    print(failure)
+                    AppLoggerManager.shared.logger()?.log("\n📣📣📣📣\ngenerateMpcKeys started load: \(Date()) - failed to load key: \(keyId)\n📣📣📣📣")
                 }
-            }
+            
         }
-        print("Measure - load keys \(Date().timeIntervalSince(startDate))")
-        callback(dict)
+        AppLoggerManager.shared.logger()?.log("\n📣📣📣📣\ngenerateMpcKeys started load: \(Date()) - loaded keys: \(dict.keys)\n📣📣📣📣")
+        return(dict)
     }
     
-    private func getMpcSecret(keyId: String, callback: @escaping (Result) -> Void) {
-        let getMpcSecret = {
-            guard let acl = self.getAcl() else {
-                callback(.failure(errSecNotAvailable))
-                return
-            }
-                        
-            guard let tag = keyId.data(using: .utf8) else {
-                callback(.failure(errSecNotAvailable))
-                return
-            }
-
-            var attributes = [String : AnyObject]()
-
-            attributes[kSecClass as String] = kSecClassKey
-            attributes[kSecAttrApplicationTag as String] = tag as AnyObject
-            attributes[kSecReturnData as String] = kCFBooleanTrue
-            attributes[kSecMatchLimit as String] = kSecMatchLimitOne
-            attributes[kSecAttrAccessControl as String] = acl
-            
-            let context = LAContext()
-            context.touchIDAuthenticationAllowableReuseDuration = 0
-
-            context.setCredential(self.deviceId.data(using: .utf8), type: .applicationPassword)
-            attributes[kSecUseAuthenticationContext as String] = context
-            
-            var resultEntry : AnyObject? = nil
-            let status = SecItemCopyMatching(attributes as CFDictionary, &resultEntry)
-
-            if status == errSecSuccess,
-                let data = resultEntry as? NSData {
-                callback(.loadSuccess(Data(referencing: data)))
-                return
-            }
-            callback(.failure(status))
+    private func getMpcSecret(keyId: String, acl: SecAccessControl) async -> Result {
+        guard let tag = keyId.data(using: .utf8) else {
+            AppLoggerManager.shared.logger()?.log("\n📣📣📣📣\ngenerateMpcKeys started load: \(Date()) - failed not tag to load key: \(keyId)\n📣📣📣📣")
+            return(.failure(errSecNotAvailable))
         }
+
+        var attributes = [String : AnyObject]()
+
+        attributes[kSecClass as String] = kSecClassKey
+        attributes[kSecAttrApplicationTag as String] = tag as AnyObject
+        attributes[kSecReturnData as String] = kCFBooleanTrue
+        attributes[kSecMatchLimit as String] = kSecMatchLimitOne
+        attributes[kSecAttrAccessControl as String] = acl
         
-        if Thread.current.isMainThread {
-            getMpcSecret()
-        } else {
-            DispatchQueue.main.sync {
-                getMpcSecret()
-            }
+        attributes[kSecUseAuthenticationContext as String] = context
+        
+        var resultEntry : AnyObject? = nil
+        let status = SecItemCopyMatching(attributes as CFDictionary, &resultEntry)
+
+        if status == errSecSuccess,
+            let data = resultEntry as? NSData {
+            return(.loadSuccess(Data(referencing: data)))
         }
+        return(.failure(status))
+
     }
 
     private func getAcl() -> SecAccessControl? {
         var error : Unmanaged<CFError>?
         var acl: SecAccessControl?
-        var secFlagsArray: [SecAccessControlCreateFlags] = []
-        secFlagsArray.append(.applicationPassword)
 
         acl = SecAccessControlCreateWithFlags(kCFAllocatorDefault,
                                               kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly,
@@ -241,6 +220,7 @@ class KeyStorageProvider: KeyStorageDelegate {
                                               &error)
 
         if error != nil {
+            AppLoggerManager.shared.logger()?.log("\n📣📣📣📣\ngenerateMpcKeys started store: \(Date()) - no acl\n📣📣📣📣")
             return nil
         }
         return acl!
@@ -257,8 +237,6 @@ class KeyStorageProvider: KeyStorageDelegate {
     }
 
     private func setupBiometric(succeeded: @escaping (Bool) -> ()) {
-        let context = LAContext()
-        context.touchIDAuthenticationAllowableReuseDuration = 0
         var error: NSError?
         if context.canEvaluatePolicy(
                 LAPolicy.deviceOwnerAuthenticationWithBiometrics,
@@ -267,12 +245,13 @@ class KeyStorageProvider: KeyStorageDelegate {
             
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
                 [weak self] success, authenticationError in
-                
-                DispatchQueue.main.async {
-                    if success {
-                        succeeded(true)
-                    } else {
-                        succeeded(false)
+                if let self {
+                    DispatchQueue.main.async {
+                        if success {
+                            succeeded(true)
+                        } else {
+                            succeeded(false)
+                        }
                     }
                 }
             }
@@ -285,9 +264,6 @@ class KeyStorageProvider: KeyStorageDelegate {
     }
     
     private func biometricStatus(status: @escaping (BiometricStatus) -> ()) {
-        let context = LAContext()
-        context.touchIDAuthenticationAllowableReuseDuration = 0
-        
         var error: NSError?
         if context.canEvaluatePolicy(
                 LAPolicy.deviceOwnerAuthenticationWithBiometrics,
