@@ -26,137 +26,42 @@ struct DeriveKeysView: View {
                     .padding(.bottom, 8)
                     .padding(.horizontal, 16)
                 List {
-                    ForEach(Array(viewModel.items.keys), id: \.self) { key in
-                        if let keyData = viewModel.items[key] {
-                            Section(key) {
-                                ForEach(keyData, id: \.assetSummary) { item in
-                                    if let asset = item.assetSummary.asset {
-                                        Section {
-                                            VStack(spacing: 12) {
-                                                HStack(spacing: 8) {
-                                                    VStack(spacing: 0) {
-                                                        DerivedAssetRow(asset: asset)
-                                                            .padding(4)
-                                                    }
-                                                    .frame(width: 32, height: 32)
-                                                    .background(Color.black)
-                                                    .clipShape(RoundedRectangle(cornerRadius: 8.0))
-                                                    
-                                                    Text(asset.name)
-                                                        .font(.body1)
-                                                        .multilineTextAlignment(.leading)
-                                                    Spacer()
-                                                    
-                                                    if let data = item.keyData?.data {
-                                                        Image(uiImage: AssetsIcons.copy.getIcon())
-                                                            .imageScale(.large)
-                                                            .onTapGesture {
-                                                                viewModel.selectedAsset = asset
-                                                                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                                                                    if viewModel.selectedAsset?.id == asset.id {
-                                                                        viewModel.selectedAsset = nil
-                                                                    }
-                                                                }
-                                                                UIPasteboard.general.string = data
-                                                                
-                                                            }
-                                                        
-                                                        Image(uiImage: item.isExposed ?  AssetsIcons.eye.getIcon() : AssetsIcons.eyeCrossedOut.getIcon())
-                                                            .imageScale(.large)
-                                                            .onTapGesture {
-                                                                withAnimation {
-                                                                    if let index = viewModel.items[key]?.firstIndex(where: {$0.assetSummary.asset?.id == asset.id}) {
-                                                                        viewModel.items[key]?[index].isExposed.toggle()
-                                                                    }
-                                                                }
-                                                            }
-                                                    }
+                    ForEach(viewModel.sortedPrivateKeys(), id: \.self) { keyData in
+                        if let algorithm = keyData.algorithm?.rawValue {
+                            if let privateKey = keyData.privateKey {
+                                Section(algorithm) {
+                                    AssetCell(privateKey: privateKey, copyTextTitle: viewModel.getKeysTitle(algorithm: algorithm), copiedText: $viewModel.copiedText) {
+                                        HStack {
+                                            Text(viewModel.getKeysTitle(algorithm: algorithm))
+                                                .foregroundStyle(.secondary)
+                                            Spacer()
+                                        }
+                                    }
+                                }
+                                .listRowSeparator(.hidden)
+                            }
+                            
+                            if algorithm != Algorithm.MPC_EDDSA_ED25519.rawValue {
+                                if let items = viewModel.items[algorithm] {
+                                    ForEach(items, id: \.assetSummary) { item in
+                                        if let asset = item.assetSummary.asset, let privateKey = item.privateKey {
+                                            Section {
+                                                AssetCell(privateKey: privateKey, copyTextTitle: asset.name, copiedText: $viewModel.copiedText) {
+                                                    DerivedAssetRow(asset: asset)
                                                 }
                                                 
-                                                HStack {
-                                                    if let data = item.keyData?.data {
-                                                        if !item.isExposed {
-                                                            SecureField("", text: .constant(data))
-                                                                .frame(maxWidth: .infinity)
-                                                                .padding()
-                                                                .disabled(true)
-                                                                .multilineTextAlignment(.leading)
-                                                            
-                                                        } else {
-                                                            Text(data)
-                                                                .frame(maxWidth: .infinity, alignment: .leading)
-                                                                .padding()
-                                                                .multilineTextAlignment(.leading)
-                                                        }
-                                                    } else {
-                                                        ProgressView()
-                                                    }
-                                                }
-                                                .overlay(
-                                                    RoundedRectangle(cornerRadius: 8)
-                                                        .stroke(AssetsColors.gray2.color(), lineWidth: 1)
-                                                )
-                                                
-                                                
-                                            }
-                                            
-                                            if let wif = item.wif {
-                                                VStack(spacing: 12) {
-                                                    HStack(spacing: 8) {
-                                                        Text("WIF")
-                                                            .font(.body1)
-                                                            .multilineTextAlignment(.leading)
-                                                        Spacer()
-                                                        
-                                                        Image(uiImage: AssetsIcons.copy.getIcon())
-                                                            .imageScale(.large)
-                                                            .onTapGesture {
-                                                                viewModel.selectedAsset = asset
-                                                                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                                                                    if viewModel.selectedAsset?.id == asset.id {
-                                                                        viewModel.selectedAsset = nil
-                                                                    }
-                                                                }
-                                                                UIPasteboard.general.string = wif
-                                                                
-                                                            }
-                                                        
-                                                        Image(uiImage: item.isExposed ?  AssetsIcons.eye.getIcon() : AssetsIcons.eyeCrossedOut.getIcon())
-                                                            .imageScale(.large)
-                                                            .onTapGesture {
-                                                                withAnimation {
-                                                                    if let index = viewModel.items[key]?.firstIndex(where: {$0.assetSummary.asset?.id == asset.id}) {
-                                                                        viewModel.items[key]?[index].isWifExposed.toggle()
-                                                                    }
-                                                                }
-                                                            }
-                                                    }
-                                                    
-                                                    HStack {
-                                                        if !item.isWifExposed {
-                                                            SecureField("", text: .constant(wif))
-                                                                .frame(maxWidth: .infinity)
-                                                                .padding()
-                                                                .disabled(true)
-                                                                .multilineTextAlignment(.leading)
-                                                            
-                                                        } else {
-                                                            Text(wif)
-                                                                .frame(maxWidth: .infinity, alignment: .leading)
-                                                                .padding()
-                                                                .multilineTextAlignment(.leading)
+                                                if let wif = item.wif {
+                                                    AssetCell(privateKey: wif, copyTextTitle: asset.name, copiedText: $viewModel.copiedText) {
+                                                        HStack {
+                                                            Text("WIF")
+                                                                .foregroundStyle(.secondary)
+                                                            Spacer()
                                                         }
                                                     }
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 8)
-                                                            .stroke(AssetsColors.gray2.color(), lineWidth: 1)
-                                                    )
-                                                    
-                                                    
                                                 }
-                                                
                                             }
-                                            
+                                            .listRowSeparator(.hidden)
+
                                         }
                                     }
                                 }
@@ -165,6 +70,7 @@ struct DeriveKeysView: View {
                     }
                 }
                 .listStyle(.insetGrouped)
+                .listRowSeparator(.hidden)
                 Spacer()
                 
             }
@@ -173,25 +79,86 @@ struct DeriveKeysView: View {
             VStack(spacing: 0) {
                 Spacer()
                 Label {
-                    Text("\(viewModel.selectedAsset?.name ?? "") Key  Copied")
+                    Text("\(viewModel.copiedText ?? "") Key  Copied")
                 } icon: {
                     Image(systemName: "checkmark")
                 }
                 .padding(16)
                 .background(AssetsColors.gray1.color())
                 .clipShape(RoundedRectangle(cornerRadius: 8.0))
-                .opacity(viewModel.selectedAsset == nil ? 0 : 1)
+                .opacity(viewModel.copiedText == nil ? 0 : 1)
                 
             }
             .padding(.vertical, 24)
             
         }
-        .animation(.default, value: viewModel.selectedAsset)
+        .animation(.default, value: viewModel.copiedText)
         .navigationTitle(viewModel.navigationBarTitle)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-#Preview {
-    DeriveKeysView(viewModel: DeriveKeysView.ViewModel(privateKeys: ["XXXX"]))
+struct AssetCell<Content: View>: View {
+    let privateKey: String
+    let copyTextTitle: String
+    @Binding var copiedText: String?
+    @State var isExposed: Bool = false
+    @ViewBuilder var content: Content
+    
+    var body: some View {
+        VStack(spacing: 12) {
+            HStack(spacing: 8) {
+                content
+                Spacer()
+                
+                Image(uiImage: AssetsIcons.copy.getIcon())
+                    .imageScale(.large)
+                    .onTapGesture {
+                        copiedText = copyTextTitle
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                            if copiedText == copyTextTitle {
+                                copiedText = nil
+                            }
+                        }
+                        UIPasteboard.general.string = privateKey
+                        
+                    }
+                
+                Image(uiImage: isExposed ?  AssetsIcons.eye.getIcon() : AssetsIcons.eyeCrossedOut.getIcon())
+                    .imageScale(.large)
+                    .onTapGesture {
+                        withAnimation {
+                            isExposed.toggle()
+                        }
+                    }
+            }
+            
+            HStack {
+                if !isExposed {
+                    SecureField("", text: .constant(privateKey))
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .disabled(true)
+                        .multilineTextAlignment(.leading)
+                    
+                } else {
+                    Text(privateKey)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
+                        .multilineTextAlignment(.leading)
+                }
+            }
+            .overlay(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(AssetsColors.gray2.color(), lineWidth: 1)
+            )
+            
+        }
+
+
+    }
 }
+
+//#Preview {
+//    DeriveKeysView(viewModel: DeriveKeysView.ViewModel(privateKeys: ["XXXX"]))
+//}

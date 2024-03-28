@@ -40,7 +40,7 @@ class TakeoverViewController: UIViewController {
         viewModel.getTakeoverFullKeys()
     }
     
-    private func navigateToDerivedKeys(_ privateKeys: [String]){
+    private func navigateToDerivedKeys(_ privateKeys: Set<FullKey>){
         let vc = DeriveKeysHostingVC(privateKeys: privateKeys)
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -67,8 +67,8 @@ extension TakeoverViewController: TakeoverViewModelDelegate {
             if let self {
                 self.hideActivityIndicator()
                 if let fullKeys {
-                    let privateKeys = fullKeys.filter({$0.privateKey != nil}).map({$0.privateKey!})
-                    self.navigateToDerivedKeys(privateKeys)
+//                    let privateKeys = fullKeys.filter({$0.privateKey != nil}).map({$0.privateKey!})
+                    self.navigateToDerivedKeys(fullKeys)
                 } else {
                     self.showErrorMessage()
                 }

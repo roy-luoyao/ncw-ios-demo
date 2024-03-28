@@ -52,7 +52,8 @@ struct Asset: Codable, Identifiable, Hashable {
     var price: Double?
     var address: String?
     var iconUrl: String?
-    
+    var algorithm: String?
+
     var image: UIImage {
         let assetImage = AssetsImageMapper().getIconForAsset(id)
         return assetImage

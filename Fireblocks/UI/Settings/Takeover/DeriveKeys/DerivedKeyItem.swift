@@ -97,6 +97,8 @@ struct DerivedKeyItem {
     var isWifExposed: Bool = false
     var keyData: KeyData?
     var wif: String?
+    var algorithm: String?
+    var privateKey: String?
 
     func deriveAssetKey(privateKey: String) async -> KeyData?{
         let derivationParams =  DerivationParams(

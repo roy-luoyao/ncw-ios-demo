@@ -7,11 +7,12 @@
 
 import Foundation
 import SwiftUI
+import FireblocksSDK
 
 class DeriveKeysHostingVC: FBHostingViewController {
     let viewModel: DeriveKeysView.ViewModel
 
-    init(privateKeys: [String]) {
+    init(privateKeys: Set<FullKey>) {
         self.viewModel = DeriveKeysView.ViewModel(privateKeys: privateKeys)
         let view = DeriveKeysView(viewModel: self.viewModel)
         super.init(rootView: AnyView(view))
