@@ -55,11 +55,13 @@ class AmountToSendViewModel {
     }
     
     func eraseNumber(){
-        isDecimalEntered = false
         if assetAmountString.count == 1 {
             assetAmountString = "0"
             delegate?.isAmountInputValid(isValid: false, errorMessage: nil)
         } else {
+            if let last = assetAmountString.last, last == "." {
+                isDecimalEntered = false
+            }
             assetAmountString = String(assetAmountString.dropLast())
             checkAmountIsValid()
         }
