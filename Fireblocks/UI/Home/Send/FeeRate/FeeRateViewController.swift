@@ -34,6 +34,7 @@ class FeeRateViewController: UIViewController {
         navigationItem.rightBarButtonItems = [UIBarButtonItem(image: UIImage(named: "close"), style: .plain, target: self, action: #selector(handleCloseTap))]
         self.navigationItem.title = "Fee"
         createTransactionButton.config(title: "Create transaction", style: .Primary)
+        createTransactionButton.isEnabled = viewModel.isContinueButtonEnabled()
     }
     
     @objc private func handleCloseTap() {
@@ -100,6 +101,7 @@ extension FeeRateViewController: UITableViewDelegate {
         
         viewModel.selectFee(at: indexPath.row)
         selectedIndexPath = indexPath
+        self.createTransactionButton.isEnabled = self.viewModel.isContinueButtonEnabled()
     }
 }
 
@@ -112,13 +114,17 @@ extension FeeRateViewController: FeeRateViewModelDelegate {
                 self.navigateToApproveScreen()
             } else {
                 self.showAlertView()
+                self.createTransactionButton.isEnabled = false
             }
         }
     }
     
     func refreshData() {
         DispatchQueue.main.async { [weak self] in
-            self?.tableView.reloadData()
+            if let self {
+                self.tableView.reloadData()
+                self.createTransactionButton.isEnabled = self.viewModel.isContinueButtonEnabled()
+            }
         }
     }
 }

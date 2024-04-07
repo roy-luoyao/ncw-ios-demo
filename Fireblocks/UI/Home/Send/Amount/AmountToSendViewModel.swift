@@ -86,8 +86,8 @@ class AmountToSendViewModel {
     private func calculatePrice(){
         if let rate = asset.rate {
             calculatedPrice = (assetAmount * rate).formatFractions(fractionDigits: 2)
-            updateUI()
         }
+        updateUI()
     }
     
     private func checkAmountIsValid(){

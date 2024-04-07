@@ -31,6 +31,13 @@ final class FeeRateViewModel {
         tasks?.forEach{ $0.cancel() }
     }
     
+    func isContinueButtonEnabled() -> Bool {
+        if fees.count == 0 { return false }
+        if selectedFeeIndex == nil { return false }
+        
+        return true
+    }
+    
     func fetchFeeRates(){
         guard let transaction = transaction else { return }
         guard let destAddress = transaction.receiverAddress else { return }
