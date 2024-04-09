@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BFCE3912BC50C4B00EA02D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BFCE3902BC50C4B00EA02D6 /* GoogleService-Info.plist */; };
 		2B05C06A2B4698BF004CF1CE /* JoinRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05C0692B4698BF004CF1CE /* JoinRequestData.swift */; };
 		2B174FE92B62446900BE63A8 /* RedirectNewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B174FE82B62446900BE63A8 /* RedirectNewUserView.swift */; };
 		2B174FEB2B62447900BE63A8 /* RedirectNewUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B174FEA2B62447900BE63A8 /* RedirectNewUserViewModel.swift */; };
@@ -49,7 +50,6 @@
 		2BD34A7D2B99D265008406D5 /* DerivedKeyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD34A7C2B99D265008406D5 /* DerivedKeyItem.swift */; };
 		2BD34A802B9A1C8E008406D5 /* FireblocksSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2BD34A7F2B9A1C8E008406D5 /* FireblocksSDK */; };
 		2BD53A232B28735700756C4A /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD53A222B28735700756C4A /* Date+Extensions.swift */; };
-		2BD785CB2B83703F00FEA796 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BD785CA2B83703F00FEA796 /* GoogleService-Info.plist */; };
 		2BF8EDB62B56673300046F0B /* EndFlowFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8EDB52B56673300046F0B /* EndFlowFeedbackView.swift */; };
 		2BF8EDB92B56676300046F0B /* EndFlowFeedbackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8EDB82B56676300046F0B /* EndFlowFeedbackViewModel.swift */; };
 		2BF8EDBB2B566E3C00046F0B /* EndFlowFeedbackHostingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8EDBA2B566E3C00046F0B /* EndFlowFeedbackHostingVC.swift */; };
@@ -209,6 +209,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1BFCE3902BC50C4B00EA02D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2B05C0692B4698BF004CF1CE /* JoinRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinRequestData.swift; sourceTree = "<group>"; };
 		2B174FE82B62446900BE63A8 /* RedirectNewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectNewUserView.swift; sourceTree = "<group>"; };
 		2B174FEA2B62447900BE63A8 /* RedirectNewUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectNewUserViewModel.swift; sourceTree = "<group>"; };
@@ -252,7 +253,6 @@
 		2BD34A7A2B98C129008406D5 /* DerivedAssetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivedAssetRow.swift; sourceTree = "<group>"; };
 		2BD34A7C2B99D265008406D5 /* DerivedKeyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivedKeyItem.swift; sourceTree = "<group>"; };
 		2BD53A222B28735700756C4A /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
-		2BD785CA2B83703F00FEA796 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BF8EDB52B56673300046F0B /* EndFlowFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndFlowFeedbackView.swift; sourceTree = "<group>"; };
 		2BF8EDB82B56676300046F0B /* EndFlowFeedbackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndFlowFeedbackViewModel.swift; sourceTree = "<group>"; };
 		2BF8EDBA2B566E3C00046F0B /* EndFlowFeedbackHostingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndFlowFeedbackHostingVC.swift; sourceTree = "<group>"; };
@@ -508,7 +508,6 @@
 		2B7C47A12B32F077001C804B /* prod */ = {
 			isa = PBXGroup;
 			children = (
-				2BD785CA2B83703F00FEA796 /* GoogleService-Info.plist */,
 			);
 			path = prod;
 			sourceTree = "<group>";
@@ -1010,6 +1009,7 @@
 				86859F5D2A384D8B0056E3C6 /* LaunchScreen.storyboard */,
 				86859F582A384D8A0056E3C6 /* Main.storyboard */,
 				86859F602A384D8B0056E3C6 /* Info.plist */,
+				1BFCE3902BC50C4B00EA02D6 /* GoogleService-Info.plist */,
 				2B7C47A12B32F077001C804B /* prod */,
 			);
 			path = Fireblocks;
@@ -1271,7 +1271,7 @@
 				603903762A6D1F560060E026 /* ApproveViewController.xib in Resources */,
 				86859F5F2A384D8B0056E3C6 /* LaunchScreen.storyboard in Resources */,
 				608293922A56BB1400B11839 /* TransferCell.xib in Resources */,
-				2BD785CB2B83703F00FEA796 /* GoogleService-Info.plist in Resources */,
+				1BFCE3912BC50C4B00EA02D6 /* GoogleService-Info.plist in Resources */,
 				608293C52A5AD72400B11839 /* TransferDetailsViewController.xib in Resources */,
 				603B70F12A810D6200796CEE /* Roboto-Regular.ttf in Resources */,
 				6082938D2A56B85800B11839 /* TransfersViewController.xib in Resources */,
@@ -1592,11 +1592,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "NCW-sandboxDebug.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2HS962GC9R;
+				DEVELOPMENT_TEAM = CMDV72B98A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1619,10 +1617,9 @@
 				);
 				MARKETING_VERSION = 2.3.6;
 				OTHER_SWIFT_FLAGS = "-DEC2";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fireblocks.ncw.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireblocks.ncw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "NCW Demo App Development";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1639,11 +1636,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "NCW-sandboxRelease.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2HS962GC9R;
+				DEVELOPMENT_TEAM = CMDV72B98A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1666,10 +1661,9 @@
 				);
 				MARKETING_VERSION = 2.3.6;
 				OTHER_SWIFT_FLAGS = "-DEC2";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fireblocks.ncw.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireblocks.ncw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "NCW Demo App Appstore";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1689,7 +1683,7 @@
 				86859F622A384D8B0056E3C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		86859F632A384D8B0056E3C6 /* Build configuration list for PBXNativeTarget "NCW-sandbox" */ = {
 			isa = XCConfigurationList;
@@ -1698,7 +1692,7 @@
 				86859F652A384D8B0056E3C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

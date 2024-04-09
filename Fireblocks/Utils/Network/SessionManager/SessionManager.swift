@@ -353,6 +353,8 @@ class SessionManager: ObservableObject {
                     }
                     return data
                 } else {
+                    print("SessionManager RESPONSE STATUS: \(statusCode) \(url)\n\(String(describing: String(data: data, encoding: .utf8)))")
+
                     return try await retry(url: url, httpMethod: httpMethod, timeout: timeout, numberOfRetries: numberOfRetries, message: message, body: body, skipLogs: skipLogs, error: SessionManager.appError(code: statusCode))
                 }
             } else {
